@@ -8,9 +8,9 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
-      == "base-lwtkot"
+      == "base-lcbfly"
   labels:
-    appstudio.openshift.io/application: application-dqet
+    appstudio.openshift.io/application: application-gkez
     appstudio.openshift.io/component: component-oci-archive
     pipelines.appstudio.openshift.io/type: build
   name: component-oci-archive-on-push
