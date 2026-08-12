@@ -8,9 +8,9 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
-      == "base-oriljq"
+      == "base-hazuuy"
   labels:
-    appstudio.openshift.io/application: application-oqmq
+    appstudio.openshift.io/application: application-htpm
     appstudio.openshift.io/component: component-oci-archive
     pipelines.appstudio.openshift.io/type: build
   name: component-oci-archive-on-push
@@ -147,7 +147,7 @@ spec:
         - name: name
           value: init
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/init@sha256:e2314f3f824b7cc9cf6dbfa6d3dfa4058b4751b88bf8932473ccfe6ec222656a
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/init@sha256:0e30ff33f81c077fd214d02c7bd2310381e7eac66b5e4b367db224e0062b110e
         - name: kind
           value: task
         resolver: bundles
@@ -477,7 +477,7 @@ spec:
         - name: name
           value: apply-tags
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/apply-tags@sha256:4765f202dd6252729b632380dfcabecb505c1edf05852a575ce2cc79484b1321
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/apply-tags@sha256:4237234e1db744e97e3a12e91c6a8bb88b866d4d574df48f2bf3ca331416b415
         - name: kind
           value: task
         resolver: bundles
