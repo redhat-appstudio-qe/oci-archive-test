@@ -9,9 +9,9 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "true"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch
-      == "base-blrqsi"
+      == "base-jhegfu"
   labels:
-    appstudio.openshift.io/application: application-ctzw
+    appstudio.openshift.io/application: application-wffd
     appstudio.openshift.io/component: component-oci-archive
     pipelines.appstudio.openshift.io/type: build
   name: component-oci-archive-on-pull-request
